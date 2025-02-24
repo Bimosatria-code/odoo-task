@@ -2,7 +2,7 @@
 <odoo>
 
   <record id="inherit_sale_order_tree_views_sales_rental" model="ir.ui.view">
-    <field name="name">sale.order.view.tree.inherit</field>
+    <field name="name">sale.order.view.tree</field>
     <field name="model">sale.order</field>
     <field name="inherit_id" ref="sale.view_order_tree"/>
     <field name="arch" type="xml">

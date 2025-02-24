@@ -2,7 +2,7 @@
 <odoo>
 
   <record id="inherit_sale_order_form_views_sales_rental" model="ir.ui.view">
-    <field name="name">sale.order.view.form.inherit</field>
+    <field name="name">sale.order.view.form</field>
     <field name="model">sale.order</field>
     <field name="inherit_id" ref="sale.view_order_form"/>
     <field name="arch" type="xml">
@@ -22,27 +22,5 @@
       </xpath>
     </field>
   </record>
-
-  <!-- <record id="inherit_sale_order_tree_views_sales_rental" model="ir.ui.view">
-    <field name="name">sale.order.view.tree.inherit</field>
-    <field name="model">sale.order</field>
-    <field name="inherit_id" ref="sale.view_order_tree"/>
-    <field name="arch" type="xml">
-      <xpath expr="//field[@name='amount_total']" position="before">
-        <field name="rental_start_date" optional="show" readonly="1" on_change="1"/>
-        <field name="rental_return_date" optional="show" readonly="1" on_change="1"/>
-        <field name="duration_days" optional="show" readonly="1" on_change="1"/>
-        <field
-          name="rental_status"
-          decoration-success="rental_status == 'reserved'"
-          decoration-primary="rental_status == 'returned'"
-          decoration-danger="rental_status == 'cancelled'"
-          decoration-muted="rental_status == 'draft'"
-          widget="badge"
-          optional="show"
-        />
-      </xpath>
-    </field>
-  </record> -->
 
 </odoo>

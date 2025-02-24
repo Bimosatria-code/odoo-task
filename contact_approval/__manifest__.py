@@ -26,9 +26,9 @@ Contact Approval
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/res_partner_inherit_views.xml',
-        'views/sale_order_inherit_views.xml',
-        'views/purchase_order_inherit_views.xml',
+        'views/res_partner_views.xml',
+        'views/sale_order_views.xml',
+        'views/purchase_order_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

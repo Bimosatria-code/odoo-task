@@ -2,7 +2,7 @@
 <odoo>
 
   <record id="inherit_res_partner_views_contact_approval" model="ir.ui.view">
-    <field name="name">res.partner.view.form.inherit</field>
+    <field name="name">res.partner.view.form</field>
     <field name="model">res.partner</field>
     <field name="inherit_id" ref="base.view_partner_form"/>
     <field name="arch" type="xml">
@@ -13,7 +13,7 @@
         <header>
           <field name="state" widget="statusbar" />
           <button name="action_approve" type="object" string="Approve" icon="fa-check" invisible="state != 'draft'" class="btn-primary"/>
-          <button name="action_cancel" type="object" string="Cancel" icon="fa-close" invisible="state != 'draft'" class="btn-primary"/>
+          <button name="action_cancel" type="object" string="Cancel" icon="fa-close" invisible="state != 'draft'" class="btn-danger"/>
           <button name="action_reset" type="object" string="Reset" icon="fa-undo" invisible="state == 'draft'" class="btn-primary"/>
         </header>
       </xpath>
