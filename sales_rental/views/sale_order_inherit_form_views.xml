@@ -23,7 +23,7 @@
     </field>
   </record>
 
-  <record id="inherit_sale_order_tree_views_sales_rental" model="ir.ui.view">
+  <!-- <record id="inherit_sale_order_tree_views_sales_rental" model="ir.ui.view">
     <field name="name">sale.order.view.tree.inherit</field>
     <field name="model">sale.order</field>
     <field name="inherit_id" ref="sale.view_order_tree"/>
@@ -43,6 +43,6 @@
         />
       </xpath>
     </field>
-  </record>
+  </record> -->
 
 </odoo>
