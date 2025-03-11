@@ -7,7 +7,10 @@ class ResPartner(models.Model):
         ('draft', 'Draft'),
         ('approved', 'Approved'),
         ('cancelled', 'Cancelled'),
-    ], default = 'draft')
+    ], 
+    required=True,
+    default = 'draft'
+    )
 
     approver_id = fields.Many2one('res.users', string='Approved By')
 
