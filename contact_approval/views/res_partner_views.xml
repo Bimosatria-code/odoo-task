@@ -11,10 +11,13 @@
       </xpath>
       <xpath expr="//sheet" position="before">
         <header>
+          
+
+          <button name="action_approve" groups="contact_approval.contact_approval_manager" type="object" string="Approve" icon="fa-check" invisible="state != 'draft'" class="btn-primary"/>
+          <button name="action_cancel" groups="contact_approval.contact_approval_manager" type="object" string="Cancel" icon="fa-close" invisible="state != 'draft'" class="btn-danger"/>
+          <button name="action_reset" groups="contact_approval.contact_approval_manager" type="object" string="Reset" icon="fa-undo" invisible="state == 'draft'" class="btn-primary"/>
+
           <field name="state" widget="statusbar" />
-          <button name="action_approve" type="object" string="Approve" icon="fa-check" invisible="state != 'draft'" class="btn-primary"/>
-          <button name="action_cancel" type="object" string="Cancel" icon="fa-close" invisible="state != 'draft'" class="btn-danger"/>
-          <button name="action_reset" type="object" string="Reset" icon="fa-undo" invisible="state == 'draft'" class="btn-primary"/>
         </header>
       </xpath>
     </field>
