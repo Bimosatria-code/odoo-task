@@ -9,7 +9,9 @@ class ProductTemplate(models.Model):
     @api.depends('is_rent')
     def _compute_count_rent(self):
         for rent in self:
-            rent.count_rent = self.env['product.template'].search_count([('is_rent', '=', True)])
+            rent.count_rent = self.env['sale.order.line'].search_count([
+                ('product_id', 'in', rent.product_variant_ids.ids)
+            ])
 
 
     def get_sale_order_with_rent_products(self, product_id):

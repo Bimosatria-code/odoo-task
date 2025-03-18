@@ -4,10 +4,6 @@
   <menuitem
     id="rental_root_menu"
     name="Rental"/>
-  <!-- <menuitem
-    id="rental_app_level_menu"
-    name="Orders"
-    parent="rental_root_menu"/> -->
   <menuitem
     id="rental_order_menu"
     name="Orders"
